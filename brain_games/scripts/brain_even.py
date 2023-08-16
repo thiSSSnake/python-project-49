@@ -27,7 +27,7 @@ def main():
             print('Correct!')
         if answer == 'no' and number % 2 != 0:
             print('Correct!')
-    return f'Congratulations, {name}!'       
+    return f'Congratulations, {name}!'
 
 
 if __name__ == '__main__':
