@@ -19,8 +19,8 @@ make lint:
 brain-games:
 	poetry run brain-games
 
-make brain-even:
+brain-even:
 	poetry run brain-even
 
-make brain-calc:
+brain-calc:
 	poetry run brain-calc	
