@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import random
 
 game_rules = "What is the result of the expression?"

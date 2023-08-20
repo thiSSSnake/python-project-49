@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import random
 
 game_rules = 'Answer "yes" if the number is even, otherwise answer "no"'
