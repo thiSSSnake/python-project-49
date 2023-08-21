@@ -1,6 +1,7 @@
-import random 
+import random
 
 GAME_RULES = 'What number is missing in the progression?'
+
 
 def seq():
     a = random.randint(1, 20)
@@ -12,6 +13,7 @@ def seq():
         list.append(a)
         i += 1
     return list
+
 
 def quest():
     sequence = seq()

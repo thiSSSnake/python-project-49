@@ -1,6 +1,7 @@
 from brain_games.games import engine
 from brain_games.games import game_progression
 
+
 def game():
     engine.start_game(game_progression)
 
