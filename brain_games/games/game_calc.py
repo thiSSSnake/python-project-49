@@ -1,6 +1,6 @@
 import random
 
-game_rules = "What is the result of the expression?"
+GAME_RULES = "What is the result of the expression?"
 
 def quest():
     num_1 = random.randint(1, 10)

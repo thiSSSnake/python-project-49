@@ -1,6 +1,6 @@
 import random
 
-game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def quest():
     number = random.randint(1, 50)

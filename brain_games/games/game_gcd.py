@@ -1,7 +1,7 @@
 import random
 import math
 
-game_rules = 'Find the greatest common divisor of given numbers.'
+GAME_RULES = 'Find the greatest common divisor of given numbers.'
 
 def quest():
     number_1 = random.randint(1, 100)

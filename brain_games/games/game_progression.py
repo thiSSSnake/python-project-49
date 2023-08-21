@@ -1,6 +1,6 @@
 import random 
 
-game_rules = 'What number is missing in the progression?'
+GAME_RULES = 'What number is missing in the progression?'
 
 def seq():
     a = random.randint(1, 20)
@@ -15,12 +15,11 @@ def seq():
 
 def quest():
     sequence = seq()
-    string = " ".join(map(str, sequence))
-    choice = random.choice(sequence)
-    correct_answer = str(choice)
-    string = string.replace(str(choice), ' .. ')
-    question = string
-    return question, correct_answer
+    random_index = random.randint(0, len(sequence) - 1)
+    correct_answer = sequence[random_index]
+    sequence[random_index] = '..'
+    question = " ".join(map(str, sequence))
+    return question, str(correct_answer)
 
 
 if __name__ == '__quest__':

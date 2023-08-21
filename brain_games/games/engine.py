@@ -14,7 +14,7 @@ def greet(name):
 def start_game(game_name):
     user_name = get_name()
     greet(user_name)
-    print(game_name.game_rules)
+    print(game_name.GAME_RULES)
     i = 0
     while i < 3:
         question, correct_answer = game_name.quest()
