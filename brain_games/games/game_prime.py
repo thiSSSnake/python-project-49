@@ -13,7 +13,7 @@ def quest():
         59, 61, 67, 71,
         73, 79, 83, 89,
         97
-        ]
+    ]
     question = str(num)
     correct_answer = ''
     if num in lst:
