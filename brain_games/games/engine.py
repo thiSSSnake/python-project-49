@@ -28,7 +28,7 @@ def start_game(game_name):
         print("Correct!")
         i += 1
     else:
-        print(f"Congratiulations, {user_name}!")
+        print(f"Congratulations, {user_name}!")
 
 
 if __name__ == '__start_game__':
