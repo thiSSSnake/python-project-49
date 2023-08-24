@@ -2,10 +2,7 @@ import random
 
 GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-
-def quest():
-    num = random.randint(1, 97)
-    lst = [
+PRIME_NUMBERS = [
         2, 3, 5, 7,
         11, 13, 17, 19,
         23, 29, 31, 37,
@@ -14,15 +11,19 @@ def quest():
         73, 79, 83, 89,
         97
     ]
-    question = str(num)
+
+
+def is_prime(num):
     correct_answer = ''
-    if num in lst:
+    if num in PRIME_NUMBERS:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
+    return correct_answer
+
+
+def quest():
+    num = random.randint(1, 97)
+    question = str(num)
+    correct_answer = is_prime(num)
     return question, correct_answer
-
-
-if __name__ == '__quest__':
-
-    quest()
