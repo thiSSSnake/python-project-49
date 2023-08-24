@@ -2,11 +2,11 @@ from brain_games import engine
 from brain_games.games import game_prime
 
 
-def prime_or_not():
+def launch():
 
     engine.start_game(game_prime)
 
 
-if __name__ == '__prime_or_not__':
+if __name__ == '__launch__':
 
-    prime_or_not()
+    launch()
