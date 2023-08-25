@@ -3,14 +3,44 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/6c3b8084ea84f7da5cdf/maintainability)](https://codeclimate.com/github/thiSSSnake/python-project-49/maintainability)
 # BRAIN GAMES
 _(5 игр)_
-## Основные комманды:
-```brain-even``` - Игра-проверка, четное число или нет
-```brain-calc``` - Игра-калькулятор на вычисление выражения
-```brain-gcd``` - Нахождение НОД (Наибольший Общий Делитель)
-```brain-progression``` - Вычисление числа из арифметической прогрессии
-```brain-prime``` - Простое ли число ?
 
-## Установка/первый запуск
+## Установка Poetry
+_Poetry - это инструмент для управления зависимостями и пакетирования на Python._
+_Этот проект использует этот инструмент, для дальнейшей установки сначала необходимо поставить Poetry_
+```bash
+# Windows (WSL), Linux, MacOS:
+>> curl -sSL https://install.python-poetry.org | python3 -
+```
+```bash
+>> poetry --version
+```
+## Установка
+_Требования для установки:_
+- _python = ^3.10_
+- _prompt = "^0.4.1"_
+_Чтобы работать с проектом, вам необходимо клонировать репозиторий на свой компьютер. Это делается с помощью команды `git clone`. Клонируйте проект в командной строке:_
+```bash
+#HTTPS
+>> git clone https://github.com/thiSSSnake/python-project-49.git
+#SSH
+>> git clone git@github.com:thiSSSnake/python-project-49.git
+```
+_Осталось перейти в нужную директорию и установить пакет:_
+```bash
+>> cd python-project-49
+>> poetry build
+>> python3 -m pip install --user dist/*.whl
+# Если вы ранее установили пакет и хотите его обновить, используйте следующую команду:
+# >> python3 -m pip install --user --принудительная переустановка dist/*.whl
+```
+## Основные комманды:
+-```brain-even``` - Игра-проверка, четное число или нет
+-```brain-calc``` - Игра-калькулятор на вычисление выражения
+-```brain-gcd``` - Нахождение НОД (Наибольший Общий Делитель)
+-```brain-progression``` - Вычисление числа из арифметической прогрессии
+-```brain-prime``` - Простое ли число ?
+
+## Первый запуск
 [![asciicast](https://asciinema.org/a/YVoWhZrcci15zqkmKcciApNa9.svg)](https://asciinema.org/a/YVoWhZrcci15zqkmKcciApNa9)
 
 
