@@ -14,16 +14,17 @@ PRIME_NUMBERS = [
 
 
 def is_prime(num):
-    correct_answer = ''
     if num in PRIME_NUMBERS:
-        correct_answer = 'yes'
+        return True
     else:
-        correct_answer = 'no'
-    return correct_answer
+        return False
 
 
 def quest():
     num = random.randint(1, 97)
     question = str(num)
-    correct_answer = is_prime(num)
+    if is_prime(num):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return question, correct_answer
