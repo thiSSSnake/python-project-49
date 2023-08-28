@@ -3,7 +3,7 @@ import random
 GAME_RULES = 'What number is missing in the progression?'
 
 
-def seq():
+def making_a_sequence():
     number = random.randint(1, 20)
     list = []
     list.append(number)
@@ -16,7 +16,7 @@ def seq():
 
 
 def quest():
-    sequence = seq()
+    sequence = making_a_sequence()
     random_index = random.randint(0, len(sequence) - 1)
     correct_answer = sequence[random_index]
     sequence[random_index] = '..'

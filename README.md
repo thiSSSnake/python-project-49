@@ -4,16 +4,6 @@
 # BRAIN GAMES
 _(5 игр)_
 
-## Установка Poetry
-_Poetry - это инструмент для управления зависимостями и пакетирования на Python._
-_Этот проект использует этот инструмент, для дальнейшей установки сначала необходимо поставить Poetry_
-```bash
-# Windows (WSL), Linux, MacOS:
->> curl -sSL https://install.python-poetry.org | python3 -
-```
-```bash
->> poetry --version
-```
 ## Установка
 _Требования для установки:_
 - _python = ^3.10_
@@ -28,10 +18,12 @@ _Требования для установки:_
 _Осталось перейти в нужную директорию и установить пакет:_
 ```bash
 >> cd python-project-49
->> poetry build
->> python3 -m pip install --user dist/*.whl
-# Если вы ранее установили пакет и хотите его обновить, используйте следующую команду:
-# >> python3 -m pip install --user ----force-reinstall dist/*.whl
+>> make install
+>> make build
+>> make publish
+>> make package-install
+# _Если раннее установка уже проводилась - чтобы обновить сборку нужно ввести комманду:
+# >> make package-reinstall
 ```
 ## Основные комманды:
 - brain-even  - Игра-проверка, четное число или нет

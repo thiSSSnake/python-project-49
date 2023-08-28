@@ -6,6 +6,6 @@ def launch():
     engine.start_game(game_even)
 
 
-if __name__ == '__launch__':
+if __name__ == '__main__':
 
     launch()

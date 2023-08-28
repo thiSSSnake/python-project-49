@@ -5,7 +5,7 @@ import operator
 GAME_RULES = "What is the result of the expression?"
 
 
-def operation():
+def calculate():
     action = {
         "+": operator.add,
         "-": operator.sub,
@@ -17,7 +17,7 @@ def operation():
 def quest():
     num_1 = random.randint(1, 10)
     num_2 = random.randint(1, 10)
-    oper = operation()
+    oper = calculate()
     question = str(num_1) + f' {oper} ' + str(num_2)
     correct_answer = str(eval(question))
     return question, correct_answer
