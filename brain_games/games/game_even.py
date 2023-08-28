@@ -3,18 +3,19 @@ import random
 GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def even(number):
-    correct_answer = ''
+def is_even(number):
     if number % 2 == 0:
-        correct_answer += 'yes'
+        return True
     if number % 2 != 0:
-        correct_answer += 'no'
-    return correct_answer
+        return False
 
 
 def quest():
     number = random.randint(1, 50)
-
+    correct_answer = ''
     question = number
-    correct_answer = even(number)
+    if is_even(number):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return question, correct_answer
