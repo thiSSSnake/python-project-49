@@ -11,10 +11,8 @@ def is_even(number):
 
 
 def quest():
-    number = random.randint(1, 50)
-    correct_answer = ''
-    question = number
-    if is_even(number):
+    question = random.randint(1, 50)
+    if is_even(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
