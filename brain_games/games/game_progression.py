@@ -4,15 +4,11 @@ GAME_RULES = 'What number is missing in the progression?'
 
 
 def making_a_sequence():
-    number = random.randint(1, 20)
-    list = []
-    list.append(number)
-    count_seq = 0
-    while count_seq < 9:
-        number += 3
-        list.append(number)
-        count_seq += 1
-    return list
+    start = random.randint(1, 40)
+    step = random.randint(1, 10)
+    end = start + step * 10
+    progression = list(range(start, end, step))
+    return progression
 
 
 def quest():
